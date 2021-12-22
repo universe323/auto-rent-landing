@@ -1,0 +1,10 @@
+export const GET_CATALOG = "GET_CATALOG";
+export const ADD_TO_CART = "ADD_TO_CART";
+export const DELETE_FROM_CART = "DELETE_FROM_CART";
+export const REMOVE_FROM_CART = "REMOVE_FROM_CART";
+export const CLEAR_CART = "CLEAR_CART";
+export const SORT_BY = "SORT_BY";
+export const FILTER_BY = "FILTER_BY";
+export const UPDATE_PRICE = "UPDATE_PRICE";
+export const UPDATE_ORDER_SIZE = "UPDATE_ORDER_SIZE";
+export const IS_LOADING = "IS_LOADING";

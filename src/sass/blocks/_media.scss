@@ -1,0 +1,33 @@
+@media screen and (max-width: 650px) {
+
+  #root {
+    height: calc(var(--vh, 1vh) * 100);
+  }
+
+  .stopwatch {
+    width: 300px;
+    height: 200px;
+
+    &__input {
+      width: 280px;
+      height: 80px;
+      font-size: 48px;
+    }
+  }
+
+  .footer {
+    &__developer {
+      display: none;
+
+    }
+
+    &__menu {
+      width: 100%;
+      justify-content: space-around;
+
+      li {
+        border-right: none;
+      }
+    }
+  }
+}
