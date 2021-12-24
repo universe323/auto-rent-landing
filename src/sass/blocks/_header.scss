@@ -1,3 +1,22 @@
 .header {
+  &__logo {
+    &_img {
+      svg {
+        fill: black;
+        stroke: black;
+        path {
+          fill: black;
+          stroke: black;
+        }
 
+      }
+    }
+    background: #15171E;
+    max-height: 150px;
+    &__phone {
+      a {
+        color: $mainTitleColor;
+      }
+    }
+  }
 }
