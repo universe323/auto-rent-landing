@@ -1,6 +1,6 @@
 import ImgLogoMin from "../../icons/logo-min.svg"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faInstagram, faVk, faWhatsapp} from '@fortawesome/free-brands-svg-icons'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faFacebook, faInstagram, faVk, faWhatsapp} from '@fortawesome/free-brands-svg-icons'
 
 const Footer = () => {
   return (
@@ -22,10 +22,18 @@ const Footer = () => {
       </div>
       <a href="/policy" className="footer__privacy-policy">Политика конфиденциальности</a>
       <div className="social_footer">
-        <a className="social__link"><FontAwesomeIcon icon={faFacebook} /></a>
-        <a className="social__link"><FontAwesomeIcon icon={faInstagram} /></a>
-        <a className="social__link"><FontAwesomeIcon icon={faVk} /></a>
-        <a className="social__link"><FontAwesomeIcon icon={faWhatsapp}/></a>
+        <a href="https://facebook.com" target="_blank" className="social__link">
+          <FontAwesomeIcon icon={faFacebook}/>
+        </a>
+        <a href="https://instagram.com" target="_blank" className="social__link">
+          <FontAwesomeIcon icon={faInstagram}/>
+        </a>
+        <a href="https://vk.com" target="_blank" className="social__link">
+          <FontAwesomeIcon icon={faVk}/>
+        </a>
+        <a href="https://whatsapp.com" target="_blank" className="social__link">
+          <FontAwesomeIcon icon={faWhatsapp}/>
+        </a>
       </div>
     </div>
   )

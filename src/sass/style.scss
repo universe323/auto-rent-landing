@@ -15,6 +15,7 @@
 }
 
 a {
+  color: white;
   &:hover {
     text-decoration: none;
   }
@@ -30,6 +31,10 @@ a {
     width: 20px;
     height: 20px;
     font-size: 20px;
+    cursor: pointer;
+    &:hover {
+      color: $link-color!important;
+    }
   }
   &_footer {
     display: flex;
@@ -40,7 +45,7 @@ a {
 }
 
 .active {
-  color:#EDC5A2!important;
+  color:$link-color!important;
 }
 
 //.container {
