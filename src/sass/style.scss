@@ -1,11 +1,47 @@
+@import "libs/bootstrap-reboot.min";
+@import "../fonts/stylesheet.css";
 @import "base/mixins";
 @import "base/variables";
 @import "base/animation";
-@import "libs/bootstrap-reboot.min";
 
 @import "blocks/footer";
 @import "blocks/media";
 @import "blocks/header";
+
+
+*, html, body {
+  font-family: Gilroy, sans-serif;
+  transition: 0.1s ease;
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.social {
+  display: flex;
+  margin-top: 18px;
+  &__link {
+    display: flex;
+    justify-content: center;
+    margin: 0 15px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+  }
+  &_footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18px;
+  }
+}
+
+.active {
+  color:#EDC5A2!important;
+}
 
 //.container {
 //  display: flex;

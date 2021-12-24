@@ -10,6 +10,7 @@ import AutoParkSlider from "../AutoParkSlider/autoParkSlider";
 import RentConditions from "../RentConditions/rentConditions";
 import ClientReviews from "../ClientReviews/clientReviews";
 import Contacts from "../Contacts/contacts";
+import Footer from "../Footer/footer";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
             <RentConditions/>
             <ClientReviews/>
             <Contacts/>
+            <Footer/>
           </Route>
           <Route path="/cart" exact>
             <Cart />
