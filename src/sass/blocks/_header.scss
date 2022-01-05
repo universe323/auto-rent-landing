@@ -1,22 +1,77 @@
 .header {
-  &__logo {
-    &_img {
-      svg {
-        fill: black;
-        stroke: black;
-        path {
-          fill: black;
-          stroke: black;
+  background: #15171E;
+  max-height: 150px;
+  &__container {
+    display: flex;
+    max-width: 1440px;
+    padding-top: 32px;
+    padding-bottom: 16px;
+    margin: 0 auto;
+  }
+  &__wrapper {
+    margin-left: 200px;
+    &_up {
+      display: flex;
+    }
+    &_down {
+      display: flex;
+      margin-top: 14px;
+    }
+  }
+  &__menu {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    :nth-child(6) {
+      margin-right: 0;
+    }
+    &_item {
+      margin-right: 24px;
+      font-size: 18px;
+      line-height: 140%;
+      color: #FFFFFF;
+      mix-blend-mode: normal;
+      opacity: 0.8;
+      a {
+        &:hover {
+          color: #EDC5A2;
+          opacity: 1;
         }
-
+      }
       }
     }
-    background: #15171E;
-    max-height: 150px;
+  &__social {
+    display: flex;
+    margin-left: 150px;
+    &_link {
+      margin-right: 10px;
+      &:hover {
+        color: #EDC5A2;
+      }
+    }
+  }
+  &__divider {
+    width: 1160px;
+    height: 1px;
+    margin-top: 18px;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+  }
     &__phone {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 120%;
       a {
         color: $mainTitleColor;
       }
+    }
+  &__download {
+    margin-left: 300px;
+    a {
+      margin-right: 22px;
     }
   }
 }
