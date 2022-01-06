@@ -1,0 +1,89 @@
+.TypesOfRent {
+  padding: 140px 0;
+  max-height: 840px;
+  background: #0A0C11;
+  &__wrapper {
+    display: flex;
+    margin-top: 80px;
+  }
+  &__title {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    line-height: 120%;
+    color: #FFFFFF;
+    span {
+      font-weight: 900;
+      font-size: 48px;
+      line-height: 61px;
+      letter-spacing: 0.1em;
+      color: #EDC5A2;
+    }
+  }
+}
+/// Вращение карточки
+.scene {
+  height: 380px;
+  width: 640px;
+  perspective: 600px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  &__btn {
+    position: absolute;
+    left: 220px;
+    bottom: 40px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 6px;
+    Width: 222px;
+    Height: 48px;
+    background: transparent;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: center;
+    color: #FFFFFF;;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  &.is-flipped {
+    transform: rotateY(180deg);
+  }
+  &__face {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    &-back {
+      padding: 74px 38px 113px 50px;
+      background: #232731;
+
+      p {
+        font-size: 18px;
+        line-height: 200%;
+        color: #FFFFFF;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
+    &-first {
+      background: url("../../img/rent/first_frame.png") center center/cover no-repeat;;
+    }
+    &-second {
+      background: url("../../img/rent/second_frame.png") center center/cover no-repeat;;
+    }
+    &-third {
+      background: url("../../img/rent/third_frame.png") center center/cover no-repeat;;
+    }
+    &-back {
+        transform: rotateY( 180deg );
+      }
+    }
+  }
