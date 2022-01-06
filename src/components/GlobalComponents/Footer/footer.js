@@ -1,18 +1,20 @@
-import ImgLogoMin from "../../icons/logo-min.svg"
+import ImgLogoMin from "../../../icons/logo-min.svg"
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faFacebook, faInstagram, faVk, faWhatsapp} from '@fortawesome/free-brands-svg-icons'
+import {Link} from "react-router-dom";
+
 
 const Footer = () => {
   return (
     <div className="footer">
       <div className="footer__logo"><img className="logo_min" src={ImgLogoMin} alt="min logo galeoncar"/></div>
       <div className="footer__bar">
-        <a href="#header" className="footer__bar_link">Главная</a>
-        <a href="#autopark" className="footer__bar_link">Автопарк</a>
-        <a href="#rent" className="footer__bar_link">Аренда</a>
-        <a href="#for-business" className="footer__bar_link">Для бизнеса</a>
-        <a href="#contacts" className="footer__bar_link">Контакты</a>
-        <a href="/cabinet" className="footer__bar_link">Личный кабинет</a>
+        <Link to="/" className="footer__bar_link">Главная</Link>
+        <Link to="/auto-park" className="footer__bar_link">Автопарк</Link>
+        <Link to="#rent" className="footer__bar_link">Аренда</Link>
+        <Link to="/for-business" className="footer__bar_link">Для бизнеса</Link>
+        <Link to="/contacts" className="footer__bar_link">Контакты</Link>
+        <Link to="/cabinet" className="footer__bar_link">Личный кабинет</Link>
       </div>
       <div className="footer__hr">
         <div className="footer__hr__line"/>
@@ -20,7 +22,7 @@ const Footer = () => {
           2022 ©&nbsp;<span className="footer__hr__brand">galeoncar</span>
         </div>
       </div>
-      <a href="/policy" className="footer__privacy-policy">Политика конфиденциальности</a>
+      <Link to="/policy" className="footer__privacy-policy">Политика конфиденциальности</Link>
       <div className="social_footer">
         <a href="https://facebook.com" target="_blank" className="social__link">
           <FontAwesomeIcon icon={faFacebook}/>

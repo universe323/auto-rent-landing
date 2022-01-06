@@ -1,13 +1,20 @@
+import {useState} from "react";
+
 const TypeOfRents = () => {
+
+    const [isCard1Active, setCard1] = useState(false);
+    const [isCard2Active, setCard2] = useState(false);
+    const [isCard3Active, setCard3] = useState(false);
+
   return (
     <>
         <section className="TypesOfRent">
             <h3 className="TypesOfRent__title">Виды <br/> <span>Аренды</span></h3>
            <div className="TypesOfRent__wrapper">
                <div className="scene">
-                   <div className="card">
+                   <div className={`card ${isCard1Active ? 'is-flipped' : null}`} >
                        <div className="card__face card__face-front card__face-first">
-                           <button className="card__btn">С водителем</button>
+                           <button className="card__btn" onClick={()=>setCard1(!isCard1Active)}>С водителем</button>
                        </div>
                        <div className="card__face card__face-back">
                            <p>Вы можете арендовать
@@ -19,9 +26,9 @@ const TypeOfRents = () => {
                    </div>
                </div>
                    <div className="scene">
-                       <div className="card">
+                       <div className={`card ${isCard2Active ? 'is-flipped' : null}`} >
                            <div className="card__face card__face-front card__face-second">
-                               <button className="card__btn">ДЛЯ ОСОБЫХ ЦЕЛЕЙ</button>
+                               <button className="card__btn" onClick={()=>setCard2(!isCard2Active)}>ДЛЯ ОСОБЫХ ЦЕЛЕЙ</button>
                            </div>
                            <div className="card__face card__face-back">
                                <p>Вы можете арендовать
@@ -33,9 +40,9 @@ const TypeOfRents = () => {
                        </div>
                    </div>
                    <div className="scene">
-                       <div className="card">
+                       <div className={`card ${isCard3Active ? 'is-flipped' : null}`} >
                            <div className="card__face card__face-front card__face-third">
-                               <button className="card__btn">БЕЗ ВОДИТЕЛЯ</button>
+                               <button className="card__btn" onClick={()=>setCard3(!isCard3Active)}>БЕЗ ВОДИТЕЛЯ</button>
                            </div>
                            <div className="card__face card__face-back">
                                <p>Вы можете арендовать
