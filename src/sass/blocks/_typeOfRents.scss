@@ -51,6 +51,9 @@
     color: #FFFFFF;;
     text-transform: uppercase;
     cursor: pointer;
+    &-back {
+      border-color: #EDC5A2;
+    }
   }
   &.is-flipped {
     transform: rotateY(180deg);
