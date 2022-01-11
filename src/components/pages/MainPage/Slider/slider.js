@@ -22,14 +22,17 @@ const Slider = () => {
 
   return (
 
-    <div>
+    <div className="slider__container">
+
+      <h2 className="slider__main-title">Аренда<span className="slider__main-title_big">премиум автомобилей</span></h2>
+
       <Swiper
-        spaceBetween={50}
         slidesPerView={3}
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
         pagination={{"clickable": true}}
         loop={true}
+        className="slider__wrapper"
       >
         <SwiperSlide>
           <img width={imgWidth} src={Img1}/>
@@ -62,7 +65,6 @@ const Slider = () => {
           <img width={imgWidth} src={Img10}/>
         </SwiperSlide>
       </Swiper>
-      <h2>Slider</h2>
     </div>
   )
 }
