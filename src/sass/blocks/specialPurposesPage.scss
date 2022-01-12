@@ -87,7 +87,7 @@
 
 .airport {
   background: url("../../img/specialPuproses/airport_bg.png") no-repeat 50%/cover;
-  padding:  140px 0 140px 240px;
+  padding:  140px 0;
   &__title {
     text-align: center;
     font-size: 24px;
@@ -105,9 +105,12 @@
   &__wrapper {
     display: flex;
     justify-content: space-around;
+    padding-left: 240px;
   }
 
   &__img {
+    margin-top: 104px;
+    margin-left: 200px;
     position: relative;
     &:before {
       position: absolute;
@@ -117,14 +120,8 @@
       border: 1px solid #FCC02A;
       z-index: 10;
       left: 24px;
-      bottom: -24px;
+      bottom: 15px;
     }
-  }
-  &__frame {
-    position: relative;
-    margin-top: 104px;
-    height: 600px;
-
   }
 }
 
@@ -136,7 +133,7 @@
 
 .businessMeet {
   background: url("../../img/specialPuproses/business-meet_bg.png") no-repeat 50%/cover;
-  padding: 140px 0 140px 150px;
+  padding: 140px 0;
   &__list {
     margin-top: 42px;
   }
@@ -161,12 +158,11 @@
     display: flex;
   }
   &__quote {
-    padding-top: 34px;
     display: flex;
     flex-direction: column;
     position: absolute;
     background:linear-gradient(45deg, transparent 75px, #232731 0);
-    width: 960px;
+    width: 1100px;
     height: 107px;
     right: 0;
     top: 165px;
@@ -179,10 +175,11 @@
     justify-content: center;
     z-index: 200;
     p {
-      margin: 0;
+        margin-top: 15px;
     }
     span {
       margin-left: 450px;
+      margin-top: -15px;
       font-size: 18px;
       letter-spacing: 0.05em;
       color: #FFFFFF;
@@ -199,13 +196,12 @@
     width: 460px;
   }
   &__descr {
-    margin-top: 331px;
+    margin-top: 290px;
     margin-left: 22px;
   }
   &__img {
     margin-top: 104px;
     height: 600px;
-    width: 1194px;
     position: relative;
     &:before {
       position: absolute;
@@ -217,5 +213,59 @@
       left: 0;
       bottom: -24px;
     }
+  }
+}
+
+
+
+///////////////WEDDING SECTION/////////////////
+
+.wedding {
+  background: url("../../img/specialPuproses/wedding_bg.png") no-repeat 50%/cover;
+  padding: 140px 0;
+  &__title {
+    text-align: center;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    span {
+      font-weight: 900;
+      font-size: 48px;
+      line-height: 61px;
+      letter-spacing: 0.1em;
+      color: #FCC02A;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 210px;
+  }
+  &__img {
+    margin-top: 104px;
+    margin-left: 200px;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: "";
+      height: 648px;
+      width: 1166px;
+      border: 1px solid #FCC02A;
+      z-index: 10;
+      left: 24px;
+      bottom: -20px;
+    }
+  }
+  &__descr {
+    margin-top: 180px;
+  }
+  &__text {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    width: 460px;
   }
 }

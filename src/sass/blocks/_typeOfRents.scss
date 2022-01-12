@@ -64,7 +64,6 @@
     width: 100%;
     backface-visibility: hidden;
     &-back {
-      padding: 74px 38px 113px 50px;
       background: #232731;
 
       p {
@@ -72,7 +71,7 @@
         line-height: 200%;
         color: #FFFFFF;
         display: block;
-        margin: 0 auto;
+        margin: 74px auto;
         text-align: center;
       }
     }

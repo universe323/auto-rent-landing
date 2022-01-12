@@ -7,6 +7,7 @@ import business from "../../../icons/special_purpose/business_btn.svg"
 import rentFor from "../../../icons/special_purpose/rent-for_btn.svg"
 import airportFrame from "../../../img/specialPuproses/airport_frame.png"
 import businessFrame from "../../../img/specialPuproses/business-meet_frame.png"
+import weddingFrame from "../../../img/specialPuproses/wedding_frame.png"
 
 
 const SpecialPurposesPage = () => {
@@ -74,6 +75,28 @@ const SpecialPurposesPage = () => {
             </div>
             {/*SLIDER PLACE*/}
         </section>
+
+        <section className="wedding">
+            <h2 className="wedding__title">для <br/> <span>Свадьбы</span></h2>
+            <div className="wedding__wrapper">
+                <div className="wedding__descr">
+                    <p className="wedding__text">Каждая свадьба — уникальное знаменательное событие в жизни любой пары.
+                        Наша компания предоставляет широкий выбор автомобилей от классических седанов до ярких спорткаров.
+                    </p>
+                    <ul className="wedding__list">
+                        <h4 className="purposes__list_title">В стоимость услуги входит:
+                        </h4>
+                        <li className="purposes__list_item">Подача автомобиля с личным водителем в указанное Вами время при бронировании</li>
+                        <li className="purposes__list_item"> 3 часа аренды автомобиля</li>
+                        <li className="purposes__list_item"> 2 бокала и замечательное игристое шампанское которым Вы сможете наслаждаться во время Вашей незабываемой поездки.</li>
+                    </ul>
+                </div>
+                <div className="wedding__img"><img src={weddingFrame} alt="wedding" className="wedding__frame"/></div>
+            </div>
+
+            {/*SLIDER PLACE*/}
+        </section>
+
     </>
 
   )
