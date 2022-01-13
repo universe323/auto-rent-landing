@@ -14,12 +14,16 @@
     &_item {
       width: 396px;
       word-wrap: break-word;
-      padding-top: 32px;
+      padding-top: 18px;
       font-size: 18px;
       line-height: 140%;
       letter-spacing: 0.05em;
       color: #FFFFFF;
       list-style-image: url("../../icons/special_purpose/check.svg");
+      span {
+        font-weight: bold;
+        font-size: 24px;
+      }
     }
   }
   &__title {
@@ -94,6 +98,7 @@
     line-height: 120%;
     letter-spacing: 0.05em;
     color: #FFFFFF;
+    text-transform: uppercase;
     span {
       font-weight: 900;
       font-size: 48px;
@@ -229,6 +234,251 @@
     line-height: 120%;
     letter-spacing: 0.05em;
     color: #FFFFFF;
+    text-transform: uppercase;
+    span {
+      font-weight: 900;
+      font-size: 48px;
+      line-height: 61px;
+      letter-spacing: 0.1em;
+      color: #FCC02A;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 210px;
+  }
+  &__img {
+    margin-top: 104px;
+    margin-left: 200px;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: "";
+      height: 648px;
+      width: 1166px;
+      border: 1px solid #FCC02A;
+      z-index: 10;
+      left: 24px;
+      bottom: -20px;
+    }
+  }
+  &__descr {
+    margin-top: 180px;
+  }
+  &__text {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    width: 460px;
+  }
+}
+
+
+/////////////////////FOR DATE SECTION//////////////////
+.forDate {
+  background: url("../../img/specialPuproses/date_bg.png") no-repeat 50%/cover;
+  padding: 140px 0;
+  &__list {
+    margin-top: 42px;
+  }
+  &__title {
+    text-align: center;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    span {
+      font-weight: 900;
+      font-size: 48px;
+      line-height: 61px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #FCC02A;
+    }
+  }
+  &__wrapper {
+    position: relative;
+    display: flex;
+  }
+  &__text {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    width: 460px;
+  }
+  &__descr {
+    margin-top: 45px;
+    margin-left: 22px;
+  }
+  &__img {
+    margin-top: 104px;
+    height: 600px;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: "";
+      height: 794px;
+      width: 1170px;
+      border: 1px solid #FCC02A;
+      z-index: 10;
+      left: 0;
+      top: -29px;
+    }
+  }
+}
+
+
+/////////FOR PHOTO SECTION//////
+.forPhoto {
+  background: url("../../img/specialPuproses/photo_bg.png") no-repeat 50%/cover;
+  padding: 140px 0;
+  &__title {
+    text-align: center;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    span {
+      font-weight: 900;
+      font-size: 48px;
+      line-height: 61px;
+      letter-spacing: 0.1em;
+      color: #FCC02A;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 210px;
+  }
+  &__img {
+    margin-top: 104px;
+    margin-left: 200px;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: "";
+      height: 648px;
+      width: 1166px;
+      border: 1px solid #FCC02A;
+      z-index: 10;
+      left: 24px;
+      bottom: -20px;
+    }
+  }
+  &__descr {
+    margin-top: 180px;
+  }
+  &__text {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    width: 460px;
+  }
+}
+
+
+/////////////////////// FOR BUSINESS SECTION ////////////////////
+
+
+.forBusiness {
+  background: url("../../img/specialPuproses/business_bg.png") no-repeat 50%/cover;
+  padding: 140px 0;
+  &__list {
+    margin-top: 42px;
+    &_title {
+      font-size: 18px;
+      line-height: 140%;
+      letter-spacing: 0.05em;
+      color: #FFFFFF;
+    }
+  }
+  &__details {
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    span {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 120%;
+      text-transform: uppercase;
+      color: #FCC02A;
+      margin-right: 5px;
+    }
+  }
+  &__title {
+    text-align: center;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    span {
+      font-weight: 900;
+      font-size: 48px;
+      line-height: 61px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #FCC02A;
+    }
+  }
+  &__wrapper {
+    position: relative;
+    display: flex;
+  }
+  &__text {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    width: 460px;
+  }
+  &__descr {
+    margin-top: 45px;
+    margin-left: 22px;
+  }
+  &__img {
+    margin-top: 104px;
+    height: 600px;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: "";
+      height: 666px;
+      width: 1170px;
+      border: 1px solid #FCC02A;
+      z-index: 10;
+      left: 0;
+      top: -24px;
+    }
+  }
+}
+
+
+/////////////// RENT FOR SECTION////////////////
+
+.rentFor {
+  background: #0A0C11;
+  padding: 140px 0;
+  &__title {
+    text-align: center;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    text-transform: uppercase;
     span {
       font-weight: 900;
       font-size: 48px;
